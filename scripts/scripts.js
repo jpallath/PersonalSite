@@ -10,8 +10,8 @@
          "./images/AboutProfilePic.png"
        ]
      },
-     skills : {
-       banner : "Skills",
+     background : {
+       banner : "Background",
        description : {
          schools: {
            GeneralAssembly: {

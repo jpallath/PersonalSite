@@ -13,7 +13,7 @@
         <div class="table">
           <ul>
             <li><a href ng-click="tab = 1">About Jerry</a></li>
-            <li ng-click="tab = 2"><a href>Skills</a></li>
+            <li ng-click="tab = 2"><a href>Background</a></li>
             <li ng-click="tab = 3"><a href>Projects</a></li>
             <li ng-click="tab = 4"><a href>Contact</a></li>
           </ul>
@@ -28,21 +28,21 @@
         </p>
             <img class="corner-pic" width="100px" ng-src="{{module.data.about.images[0]}}" />
       </div>
-      <div class="Skills" ng-show="tab === 2">
-        <h1 class="banner">{{module.data.skills.banner}}</h1>
-        <div class="skills-division" ng-repeat = "school in module.data.skills.description.schools">
+      <div class="Background" ng-show="tab === 2">
+        <h1 class="banner">{{module.data.background.banner}}</h1>
+        <div class="background-division" ng-repeat = "school in module.data.background.description.schools">
           <div class="centered-stuff">
             <img class="image-school" ng-src="{{school.image}}" width="100px" />
           </div>
           <h2 class="centered-banner">{{school.name}}</h2>
           <h3 class="textually">{{school.extra}}</h3>
         </div>
-        <h3>{{module.data.skills.description.header}}</h3>
+        <h3>{{module.data.background.description.header}}</h3>
         <p>
-          {{module.data.skills.extra[0]}}
+          {{module.data.background.extra[0]}}
         </p>
         <ul class="img-thumbnails clearfix">
-          <li class="small-image pull-left thumbnail" ng-repeat = "image in module.data.skills.images">
+          <li class="small-image pull-left thumbnail" ng-repeat = "image in module.data.background.images">
             <img width="100px" ng-src="{{image}}" />
           </li>
         </ul>
