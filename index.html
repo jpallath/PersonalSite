@@ -20,6 +20,14 @@
         </div>
       </div>
     <div class=totality>
+      <div class="About-Jerry" ng-hide = "tab == 1 ||tab == 2 || tab == 3 || tab == 4">
+        <h1 class="banner">{{module.data.about.banner}}</h1>
+        <h3>{{module.data.about.description.header}}</h3>
+        <p class="textually" ng-repeat="extra in module.data.about.extra"class="textually">
+          {{extra}}
+        </p>
+            <img class="corner-pic" width="100px" ng-src="{{module.data.about.images[0]}}" />
+      </div>
       <div class="About-Jerry" ng-show="tab === 1">
         <h1 class="banner">{{module.data.about.banner}}</h1>
         <h3>{{module.data.about.description.header}}</h3>
