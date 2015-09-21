@@ -1,0 +1,143 @@
+<div class="module row" ng-repeat = "part in module.data">
+<h1>{{part.banner}}</h1>
+<h3>{{part.description.header}}</h3>
+<p>
+  {{part.extra[0]}}
+</p>
+<ul class="img-thumbnails clearfix">
+  <li class="small-image pull-left thumbnail" ng-repeat = "image in part.images">
+    <img width="100px" ng-src="{{image}}" />
+  </li>
+</ul>
+
+
+description : [
+  "Project Dibs", "Pick Up and Go", "Jerrkipedia"
+],
+extra: ["My incentive to build 'Project Dibs' was to make a forum based app where users could post their ideas of how to make an existing piece of popular culture better.  If a user had a better idea of how to improve a movie like 'The Dark Knight Rises,' he could post his idea here and watch how the rest of the community will criticize it.  This was built on Node.js with a MongoDB database.  It utilized the Google Material Design CSS Framework for a nice polished interface.  Lastly it featured completely encrypted passwords through the use of the bcrypt node package.", "Pick Up and Go was a group effort built with the hope of making, finding, and organizing pick up games (such as basketball and soccer) into an easy experience.  My part of the project involved utilizing Facebook API to make unique user logins, develop the PostGreSql database, and many tweaks on the front end of the webpage.", "Jerrkipedia was a simple app based on mirroring the simpler parts of popular website 'Wikipedia,'.  It was my first major project utilizing Node.js and MongoDB and the first time I implemented a RESTful routing and a CRUD structure to an app."],
+images : [
+  "1", "2"
+]
+
+description : [
+  "GitHub", "Email", "Information"
+],
+extra: ["http://www.github.com/jpallath", "jpallath@nyu.edu", "Phone: 815-627-0825 \n Address: 431 Wildrose Ave, Bergenfield NJ 07621"],
+images : [
+  "3", "4"
+]
+
+
+CSS
+@media only screen and (min-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+html {
+min-width: 550px;
+position: relative;
+}
+
+#menu-outer {
+	height: 84px;
+	background: url(images/bar-bg.jpg) repeat-x;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+	}
+ul#horizontal-list li {
+		display: inline;
+  }
+
+#navigation{
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  background: purple;
+  border-color: purple;
+  border-style: groove;
+}
+
+
+#navigation li{
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  width: 209px;
+  float: left;
+  margin: 3px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 2.5px solid purple;
+  background: yellow;
+}
+
+#navigation li:hover{
+  background: purple;
+  border-color: yellow;
+}
+
+#navigation li:hover a{
+  color: white;
+}
+
+#navigation li:active{
+  background: purple;
+}
+
+#navigation li:active a{
+  color: white;
+}
+
+.totality{
+  width: 100%;
+}
+
+.banner{
+  text-align: center;
+  color: purple;
+  float: none;
+}
+
+.centered-banner{
+  text-align: center;
+  color: rebeccapurple;
+}
+
+a{
+  text-decoration: none;
+  color: purple;
+}
+
+.corner-pic{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 64%;
+}
+
+.centered-stuff{
+  float: none;
+  margin-left: 40%;
+}
+
+.image-school{
+  width: 35%;
+}
+
+.textually{
+  width: 45%;
+  margin-left: 5%;
+  background-color: orange;
+  border: 3px groove black;
+}
