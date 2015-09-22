@@ -39,11 +39,11 @@
       <div class="Background" ng-show="tab === 2">
         <h1 class="banner">{{module.data.background.banner}}</h1>
         <div class="background-division" ng-repeat = "school in module.data.background.description.schools">
+          <h2 class="centered-banner">{{school.name}}</h2>
+          <h3 class="textually-school">{{school.extra}}</h3>
           <div class="centered-stuff">
             <img class="image-school" ng-src="{{school.image}}" width="100px" />
           </div>
-          <h2 class="centered-banner">{{school.name}}</h2>
-          <h3 class="textually">{{school.extra}}</h3>
         </div>
         <h3>{{module.data.background.description.header}}</h3>
         <p>

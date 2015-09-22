@@ -96,16 +96,27 @@ a{
 
 .centered-stuff{
   float: none;
-  margin-left: 40%;
+  margin: auto;
+  margin-left: 25%;
 }
 
 .image-school{
-  width: 100%;
+  width: 75%;
+  margin: auto;
 }
 
 .textually{
   width: 45%;
   margin-left: 5%;
+  background-color: orange;
+  border: 3px groove black;
+}
+
+.textually-school{
+  width: 67%;
+  margin-left: 50%;
+  margin: auto;
+  margin-bottom: 10px;
   background-color: orange;
   border: 3px groove black;
 }
