@@ -109,3 +109,8 @@ a{
   background-color: orange;
   border: 3px groove black;
 }
+
+.project-image{
+  width: 100%;
+  border: 1px solid black;
+}

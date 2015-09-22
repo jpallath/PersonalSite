@@ -28,13 +28,18 @@
        banner : "Projects",
        description : {
          projects: {
-           ProjectDibs: {
-             name:"Project Dibs", extra:"During my Web Development Immersive experience I learned how to implement web development technologies such as: HTML, CSS, Javascript, jQuery, Ruby, Node.js, Rails, MongoDB, PostGreSql",
-             image: "./images/SkillsGA.png"},
-           PickUpAndGo: {
+           C: {
+             name:"My PersonalSite",
+             extra:["The main reason I wanted to include this in my list of projects is that it's my best example of utilizing Angular.js","The site uses simple HTML, CSS, and Javascript.  What I wanted to be the main draw is the quick requests back and forth from the server with AJAX calls by using Angular.js."],
+             image: "./images/PersonalSite.png"},
+           B: {
+             name:"Project Dibs",
+             extra:['In Project Dibs, my plan was to build a full stack application that would be able to allow users to post their ideas to "perfect" something in popular culture.  Once a user posts his idea-- then other users can comment on the post, debating if it is actually possible or worth it',"I utilized MongoDB on the back-end, and on the front-end I integrated Google's Material Design Lite to provide a desirable interface.  The entire app is built on top of Node.js."],
+             image: "./images/ProjectDibs.png"},
+           A: {
              name:"Pick Up and Go",
-             extra:"During my time at New York University, I studied under the Premedicine Track and Graduated with a BA in Psychology.  I also took a number of classes in Computer Sciences, Mathematics, and Neuroscience",
-             image: "./images/SkillsNYU.png"}
+             extra:["Pick Up and Go was a collaborated effort.  I worked with two other developers and a product manager to build a full stack app that provides the opportunity to allow users to organize neighborhood games of Soccer, Baseball, Football, and Basketball with friends and other users in the area.","In this application.  I developed the database using Active Record to develop relations in PostGreSQL.  I provided Front-End assistance with HTML, CSS, and Javascript/jQuery, while following the philosophies dictated by the CSS framework, MaterializeCSS"],
+             image: "./images/PickUpAndGo.png"}
          }
        }
      },

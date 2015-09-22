@@ -59,13 +59,13 @@
         <h1 class="banner">{{module.data.projects.banner}}</h1>
         <div class="projects-division" ng-repeat = "project in module.data.projects.description.projects">
           <h2>{{project.name}}</h2>
-          <h4>{{project.extra}}</h4>
-          <img ng-src="{{project.image}}" width="100px" />
+          <h4>{{project.extra[0]}}</h4>
+          <img class = "project-image" ng-src="{{project.image}}" width="100px" />
+          <p>
+            {{project.extra[1]}}
+          </p>
         </div>
-        <h3>{{module.data.projects.description.header}}</h3>
-        <p>
-          {{module.data.projects.extra[0]}}
-        </p>
+
         <ul class="img-thumbnails clearfix">
           <li class="small-image pull-left thumbnail" ng-repeat = "image in module.data.projects.images">
             <img width="100px" ng-src="{{image}}" />
